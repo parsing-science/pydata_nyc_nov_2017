@@ -1,0 +1,3 @@
+jupyter
+scikit-learn
+git+ssh://git@github.com/parsing-science/ps-toolkit.git@v2.1.1#egg=PS_Toolkit
