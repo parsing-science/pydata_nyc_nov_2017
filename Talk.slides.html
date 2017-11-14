@@ -11905,17 +11905,15 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center>
-<h2 style="display:inline;"> Turning </h2> 
-<img src="img/pymc3.jpg" alt="pymc3_logo" style="width: 200px;display:inline;vertical-align:-200%;"/><br>
-<h2 style="display:inline;"> into </h2>
-<img src="img/sklearn.png" alt="sklearn_logo" style="width: 150px;display:inline;vertical-align:-150%;"/>
+<p><h2 style="display:inline;"> Turning </h2> 
+<img src="img/pymc3.jpg" alt="pymc3_logo" style="width: 200px;display:inline;vertical-align:-200%;"/><br></p>
+<p><h2 style="display:inline;"> into </h2>
+<img src="img/sklearn.png" alt="sklearn_logo" style="width: 150px;display:inline;vertical-align:-150%;"/></p>
 <h3>
 Nicole Carlson <br>
 @parsing_science <br>
 github.com/parsing-science/pydata_nyc_nov_2017
 </h3>
-</center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11923,15 +11921,10 @@ github.com/parsing-science/pydata_nyc_nov_2017
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="About-Me">About Me<a class="anchor-link" href="#About-Me">&#182;</a></h1><h2 style="display:inline;"> Data Scientist @ </h2> <img src="img/sr_logo.jpg" alt="ShopRunner_logo" style="width: 300px;display:inline;vertical-align:-200%;"/><br>
+<h1 id="About-Me">About Me<a class="anchor-link" href="#About-Me">&#182;</a></h1><p><h2 style="display:inline;"> Data Scientist @ </h2><img src="img/sr_logo.jpg" alt="ShopRunner_logo" style="width: 300px;display:inline;vertical-align:-330%;"/><br></p>
+<p><h2 style="display:inline;"> Instructor @ </h2><img src="img/gwc_logo.jpg" alt="Girls_Who_Code_logo" style="width: 200px;display:inline;vertical-align:-300%;"/><br></p>
+<p><h2 style="display:inline;"> Physics @ </h2><img src="img/berkeley_logo.png" alt="Berkeley_logo" style="width: 350px;display:inline;vertical-align:-300%;"/><br></p>
 
-<h2 style="display:inline;"> Instructor @ </h2><img src="img/gwc_logo.jpg" alt="Girls_Who_Code_logo" style="width: 200px;display:inline;vertical-align:-200%;"/><br>
-
-<h2 style="display:inline;"> Physics @ </h2><img src="img/berkeley_logo.png" alt="Berkeley_logo" style="width: 350px;display:inline;vertical-align:-200%;"/><br>
-
-<h2 style="display:inline;"> <br>
-Interests: Alphabetization, Documentation, Large Font Sizes
-</h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12845,6 +12838,45 @@ EUMgBwAAAAARQyAHAAAAABFDIAcAAAAAEUMgBwAAAAARQyAHAAAAABFDIAcAAAAAEUMgBwAAAAAR
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2> Using scikit-learn  </h2><table>
+<tr>
+<th> </th>
+<th>scikit-learn</th>
+<th>PyMC3</th>
+</tr>
+<tr>
+<th>Find model parameters</th>
+<th>Easy</th>
+<th>?</th>
+</tr>
+<tr>
+<th>Predict new data</th>
+<th>Easy</th>
+<th>?</th>
+</tr>
+<tr>
+<th>Score a model</th>
+<th>Easy</th>
+<th>?</th>
+</tr>
+<tr>
+<th>Save a trained model</th>
+<th>Easy</th>
+<th>?</th>
+</tr>
+<tr>
+<th>Load a trained model</th>
+<th>Easy</th>
+<th>?</th>
+</tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2> Intro to PyMC3 </h2><ul>
 <li>Library for Probabilistic Modeling</li>
 <li>MCMC Samplers</li>
@@ -12863,8 +12895,14 @@ EUMgBwAAAAARQyAHAAAAABFDIAcAAAAAEUMgBwAAAAARQyAHAAAAABFDIAcAAAAAEUMgBwAAAAAR
 <p><h2> Using PyMC3 </h2></p>
 <ul>
 <li>Step 1: Set up: Parameterize your model, choose priors, and insert training data</li>
-<li>Step 2: Inference: infer your parameters using sampling (e.g. NUTS) or variational inference (e.g. ADVI)</li>
+</ul>
+<ul>
+<li>Step 2: Inference: infer your parameters using MCMC sampling (e.g. NUTS) or variational inference (e.g. ADVI)</li>
+</ul>
+<ul>
 <li>Step 3: Interpret: Check your parameter distributions and model fit</li>
+</ul>
+<ul>
 <li>Step 4: Predict data: Create posterior samples with your inferred parameters</li>
 </ul>
 
@@ -15555,7 +15593,7 @@ oVAolEZQJYlCoVAoFAqFQqFQGkGVJAqFQqFQKBQKhUJpxP8Deb4M0q1Dz0AAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#mu_alpha = sigma_alpha = 5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># mu_alpha = sigma_alpha = 5</span>
 <span class="n">alphas</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">num_categories</span><span class="p">)</span> <span class="o">+</span> <span class="mi">5</span> 
 
 <span class="c1"># mu_beta = sigma_beta = 10</span>
@@ -19458,6 +19496,51 @@ KBQKhaIGNZIoFAqFQqFQKBQKRY3/B1s97/TY68UPAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2> Comparing scitkit-learn, PyMC3, and my custom class </h2><table>
+<tr>
+<th> </th>
+<th>scikit-learn</th>
+<th>PyMC3</th>
+<th>My custom class</th>
+</tr>
+<tr>
+<th>Find model parameters</th>
+<th>Easy</th>
+<th>Medium</th>
+<th>Easy</th>
+</tr>
+<tr>
+<th>Predict new data</th>
+<th>Easy</th>
+<th>Difficult</th>
+<th>Easy</th>
+</tr>
+<tr>
+<th>Score a model</th>
+<th>Easy</th>
+<th>Difficult</th>
+<th>Easy</th>
+</tr>
+<tr>
+<th>Save a trained model</th>
+<th>Easy</th>
+<th>Impossible?</th>
+<th>Easy</th>
+</tr>
+<tr>
+<th>Load a trained model</th>
+<th>Easy</th>
+<th>Impossible?</th>
+<th>Easy</th>
+</tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><h2> Next Steps </h2></p>
 <ul>
 <li>Pass more options to the various methods</li>
@@ -19474,7 +19557,7 @@ KBQKhaIGNZIoFAqFQqFQKBQKRY3/B1s97/TY68UPAAAAAElFTkSuQmCC
 <p><h2> Thanks: </h2></p>
 <ul>
 <li>My coworkers at ShopRunner (we're hiring!)</li>
-<li>My formwer coworkers at Shiftgig: Daniel Little, Tudor Radoaca, Nico Sandller</li>
+<li>My former coworkers at Shiftgig: Daniel Little, Tudor Radoaca, Nico Sandller</li>
 <li>PyData Chicago</li>
 </ul>
 <h3>

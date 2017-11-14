@@ -21,12 +21,15 @@ jupyter-nbconvert --to slides Talk.ipynb --post serve
 jupyter-nbconvert --to slides Talk.ipynb
 ```
 
-### Edit the html file to make the font bigger
+### Edit the html file
+Make font bigger:
 ```
    Reveal.initialize({
         width: '100%',
         height: '100%',
 ```
+
+Also set scroll=true in setScrollingSlide function.
 
 ### Run the slides with HTTPServer
 ```
