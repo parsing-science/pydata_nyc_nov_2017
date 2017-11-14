@@ -31,6 +31,13 @@ Make font bigger:
 
 Also set scroll=true in setScrollingSlide function.
 
+Change 
+```
+.rendered_html h3{
+    font-weight: normal;
+}
+```
+
 ### Run the slides with HTTPServer
 ```
 python -m http.server
