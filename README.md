@@ -21,7 +21,7 @@ jupyter-nbconvert --to slides Talk.ipynb --post serve
 jupyter-nbconvert --to slides Talk.ipynb
 ```
 
-### Edit the html file
+### Step 2: Edit the html file
 Make font bigger:
 ```
    Reveal.initialize({
@@ -29,19 +29,23 @@ Make font bigger:
         height: '100%',
 ```
 
-Also set scroll=true in setScrollingSlide function.
+Allow scrolling by setting scroll = true:
+```
+ function setScrollingSlide() {
+    var scroll = true
+```
 
-Change 
+Change h3 font-weight:
 ```
 .rendered_html h3{
     font-weight: normal;
 }
 ```
 
-### Run the slides with HTTPServer
+### Step 3: Run the slides with HTTPServer
 ```
 python -m http.server
 ```
 
-### Go to the slides in your browser
+### Step 4: Go to the slides in your browser
 Go to http://127.0.0.1:8000/Talk.slides.html in browser.
